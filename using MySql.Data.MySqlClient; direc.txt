@@ -1,0 +1,85 @@
+using MySql.Data.MySqlClient; //directive pour accéder aux fonctionnalités MySQL dans C#
+using System.Windows;  // utiliser pour les composants d'interface utilisateur Windows
+
+namespace HeraBougieCRUD  // espace de nom  que le code utilise
+{
+    /// <summary>
+    /// Interaction logic for MainWindow.xaml
+    /// </summary>
+    public partial class MainWindow : Window //déclare une classe partielle appelée MainWindow qui hérite de la classe Window
+    {
+        //stockent respectivement les informations de connexion au serveur MySQL telles que l'adresse du serveur
+        private string _nom = "";
+        private string _prenom = "";
+        private string _mot_de_passe = "";
+        private object pwdMotDePasse;
+
+        public MainWindow()  //constructeur est appelé lorsqu'une nouvelle instance de la classe MainWindow est créée
+        {
+            InitializeComponent();  //responsable de l'initialisation des composants graphiques définis dans le fichier XAML
+        }
+        private void mysql_connexion()  //méthode établit une connexion à une base de données MySQL en utilisant les informations saisies
+        {
+            string connexionString =
+           $"server={txtNom.Text};database={txtPrenom.Text};password={pwdMotDePasse.Password};";
+            MySqlConnection connexion = new MySqlConnection(connexionString);
+            MessageBox.Show("Connexion à MySQL");
+            connexion.Open();
+            MessageBox.Show($"Connecté à {_nom}/{_prenom} ");
+        }
+
+        private void btnSave_Click(object sender, RoutedEventArgs e)
+        {
+            // opération CREATE
+            string query = $"INSERT INTO Utilisateurs (Nom, Prenom, Email) VALUES ('Nour', 'Ounissi', 'nour.ounissi@example.com')";
+            ExecuteNonQuery(query);
+        }
+
+        private void btnDelete_Click(object sender, RoutedEventArgs e)
+        {
+            // Exemple d'opération DELETE
+            string query = "DELETE FROM Utilisateurs WHERE ID=1";
+            ExecuteNonQuery(query);
+        }
+
+
+        private void btnLogin_Click(object sender, RoutedEventArgs e) //est généralement liée à un événement de clic du bouton 
+        {
+            try
+            {
+                //// Vérifier si le bouton a le texte "Quitter"
+                if (btnSave.Content.ToString() == "Quitter")
+                    // Fermer l'application
+                    Application.Current.Shutdown();
+                else
+                {
+                    //  // Vérifier que les champs nécessaires ne sont pas vides
+                    if (txtNom.Text != "" && txtPrenom.Text != "")
+                    {
+                        //// Assigner les valeurs des champs de texte et du champ de mot de passe aux variables
+                        _nom = txtNom.Text;
+                        _prenom = txtPrenom.Text;
+                        _mot_de_passe = pwdMotDePasse.Password;
+
+                        //// Appeler la méthode mysql_connexion pour gérer la connexion à MySQL
+                        mysql_connexion();
+
+                        // // Changer le texte du bouton de connexion
+                        ///btnCancel.Content = "Quitter";
+
+                        //// Réinitialiser les variables après la connexion (peut-être pour des raisons de sécurité)
+                        _nom = "";
+                        _prenom = "";
+                        _mot_de_passe = "";
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                //// Bloc de code exécuté si une exception se produit
+
+                MessageBox.Show(ex.Message);
+            }
+        }
+    }
+}

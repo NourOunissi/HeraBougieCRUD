@@ -1,0 +1,6 @@
+C:\Users\Ounis\Documents\SLAM2023\C# projet du prof\HeraBougieCRUD\obj\Debug\net8.0-windows\HeraBougieCRUD.csproj.AssemblyReference.cache
+C:\Users\Ounis\Documents\SLAM2023\C# projet du prof\HeraBougieCRUD\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\Ounis\Documents\SLAM2023\C# projet du prof\HeraBougieCRUD\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\Ounis\Documents\SLAM2023\C# projet du prof\HeraBougieCRUD\obj\Debug\net8.0-windows\HeraBougieCRUD_MarkupCompile.cache
+C:\Users\Ounis\Documents\SLAM2023\C# projet du prof\HeraBougieCRUD\obj\Debug\net8.0-windows\HeraBougieCRUD_MarkupCompile.lref
+C:\Users\Ounis\Documents\SLAM2023\C# projet du prof\HeraBougieCRUD\obj\Debug\net8.0-windows\Vue\Article.g.cs
