@@ -7,16 +7,7 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
-    <Compile Update="Vue\Cire.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Update="Vue\Couleur.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Update="Vue\Ville.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Update="Vue\Article.xaml.cs">
+    <Compile Update="Vue\Articles.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
@@ -24,16 +15,7 @@
     <Page Update="MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Vue\Cire.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="Vue\Couleur.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="Vue\Ville.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="Vue\Article.xaml">
+    <Page Update="Vue\Articles.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
