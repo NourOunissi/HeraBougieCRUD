@@ -1,25 +1,12 @@
-﻿using MySql.Data.MySqlClient;
-using System;
-using System.Collections.Generic;
+﻿
+
+using MySql.Data.MySqlClient;
 using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
-namespace HeraBougieCRUD.Vue
+namespace HeraBougieCRUD
 {
-    /// <summary>
-    /// Logique d'interaction pour Articles.xaml
-    /// </summary>
     public partial class Articles : UserControl
     {
         // Objet nécessaires pour SQL
@@ -90,7 +77,7 @@ namespace HeraBougieCRUD.Vue
 
         private void btnSupprimer_Click(object sender, RoutedEventArgs e)
         {
-            string _sql = "DELETE FROM hb WHERE id = @Id;";
+            string _sql = "DELETE FROM produits WHERE id = @Id;";
             _command = new MySqlCommand(_sql, _connexion);
             _command.Parameters.AddWithValue("@Id", txtId.Text);
             _connexion.Open();
@@ -109,17 +96,21 @@ namespace HeraBougieCRUD.Vue
 
                 txtId.Text = _drv.Row["id"].ToString();
                 txtNom.Text = _drv.Row["nom"].ToString();
-                txtPrix.Text = _drv.Row["prenom"].ToString();
-                txtType.Text = _drv.Row["date_naissance"].ToString();
-                txtTaille.Text = _drv.Row["email"].ToString();
-                txtImage.Text = _drv.Row["telephone"].ToString();
-                txtDescription.Text = _drv.Row["adresse"].ToString();
-                txtId_Couleur.Text = _drv.Row["code_postal"].ToString();
-                txtId_Cire.Text = _drv.Row["ville"].ToString();
-                txtId_Parfum.Text = _drv.Row["ville"].ToString();
+                txtPrix.Text = _drv.Row["prix"].ToString();
+                txtType.Text = _drv.Row["type"].ToString();
+                txtTaille.Text = _drv.Row["taille"].ToString();
+                txtImage.Text = _drv.Row["image"].ToString();
+                txtDescription.Text = _drv.Row["description"].ToString();
+                txtId_Couleur.Text = _drv.Row["id_couleur"].ToString();
+                txtId_Cire.Text = _drv.Row["id_cire"].ToString();
+                txtId_Parfum.Text = _drv.Row["id_parfum"].ToString();
             }
 
         }
 
     }
 }
+
+
+
+

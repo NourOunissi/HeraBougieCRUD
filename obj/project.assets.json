@@ -1789,19 +1789,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Philippe\\.nuget\\packages\\": {}
+    "C:\\Users\\Ounis\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Philippe\\Desktop\\IFC\\CSharp\\HeraBougieCRUD\\HeraBougieCRUD.csproj",
+      "projectUniqueName": "C:\\Users\\Ounis\\Documents\\SLAM2023\\C# projet du prof\\HeraBougieCRUD\\HeraBougieCRUD.csproj",
       "projectName": "HeraBougieCRUD",
-      "projectPath": "C:\\Users\\Philippe\\Desktop\\IFC\\CSharp\\HeraBougieCRUD\\HeraBougieCRUD.csproj",
-      "packagesPath": "C:\\Users\\Philippe\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Philippe\\Desktop\\IFC\\CSharp\\HeraBougieCRUD\\obj\\",
+      "projectPath": "C:\\Users\\Ounis\\Documents\\SLAM2023\\C# projet du prof\\HeraBougieCRUD\\HeraBougieCRUD.csproj",
+      "packagesPath": "C:\\Users\\Ounis\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Ounis\\Documents\\SLAM2023\\C# projet du prof\\HeraBougieCRUD\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Philippe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Ounis\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
