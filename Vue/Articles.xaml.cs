@@ -5,7 +5,7 @@ using System.Data;
 using System.Windows;
 using System.Windows.Controls;
 
-namespace HeraBougieCRUD
+namespace HeraBougieCRUD.Vue
 {
     public partial class Articles : UserControl
     {
@@ -28,6 +28,7 @@ namespace HeraBougieCRUD
         //fonction prive renvoie rien 
         private void afficher()
         {
+
             try
             {
                 _adapter = new MySqlDataAdapter("SELECT * FROM produits;", _connexion);  // instancier

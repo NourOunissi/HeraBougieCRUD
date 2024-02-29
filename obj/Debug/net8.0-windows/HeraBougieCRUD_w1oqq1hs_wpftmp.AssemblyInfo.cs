@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HeraBougieCRUD")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a1d3e73e54f90c33578c79a016e5ee5074ceaa0d")]
 [assembly: System.Reflection.AssemblyProductAttribute("HeraBougieCRUD")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HeraBougieCRUD")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
